@@ -6,19 +6,18 @@
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic'
   rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style/balloon.min.css">
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 <div class="header">
-  <div class="grid">
+  <div class="header-grid">
    <div class="logo">
-     <img class="logo-img" src="img/logo.png" alt="logo">
+     <img class="logo-img" src="img/logo.png" alt="s">
    </div>
    <div class="input-group">
-     <input class="header__input input__small" type="text" placeholder="URL">
-     <input class="header__input input__big" type="text" placeholder="Ключевые слова">
-     <span class="header__btn">Сравнить</span>
+     <input class="header__input input__big" type="text" placeholder="Ваша ключевая фраза">
+     <input class="header__input input__big" type="text" placeholder="Укажите страну или город">
+     <span class="header__btn">Показать ТОП</span>
    </div>
   </div>
 </div>
@@ -28,8 +27,18 @@
 
     <!-- Table top 10 -->
 
-    <div class="heading">
-      Топ 10
+    <div id="top-tabs">
+      <nav>
+        <div class="tab-selected">
+          <span>Топ 10</span>
+        </div>
+        <div>
+          <span>Топ 5</span>
+        </div>
+        <div>
+          <span>Топ 3</span>
+        </div>
+      </nav>
     </div>
     <div class="table-wrap">
       <div class="table-top">
@@ -39,6 +48,7 @@
               <th class="rank">G</th>
               <th class="rank">Я</th>
               <th class="align-l" colspan="4">URL</th>
+              <th class="main-data bold align-r" >SEOLEADS Rank</th>
               <th colspan="2" class="align-r">Символы без пробела</th>
               <th class="align-r">Слова</th>
               <th class="align-r">T</th>
@@ -58,6 +68,7 @@
               <td class="align-c">1</td>
               <td class="align-c">1</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">90.0</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -76,6 +87,7 @@
               <td class="align-c">2</td>
               <td class="align-c">2</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">89.1</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -94,6 +106,7 @@
               <td class="align-c">3</td>
               <td class="align-c">3</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">85.5</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -112,6 +125,7 @@
               <td class="align-c">4</td>
               <td class="align-c">4</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">80.2</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -130,6 +144,7 @@
               <td class="align-c">5</td>
               <td class="align-c">5</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">78.4</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -148,6 +163,7 @@
               <td class="align-c">6</td>
               <td class="align-c">6</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">77.5</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -166,6 +182,7 @@
               <td class="align-c">7</td>
               <td class="align-c">7</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">77.1</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -184,6 +201,7 @@
               <td class="align-c">8</td>
               <td class="align-c">8</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">76.5</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -202,6 +220,7 @@
               <td class="align-c">9</td>
               <td class="align-c">9</td>
               <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">75.8</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -220,24 +239,7 @@
               <td class="align-c">10</td>
               <td class="align-c">10</td>
               <td class="" colspan="4">yourlongdomain.com</td>
-              <td class="top-data" colspan="2">256</td>
-              <td class="top-data">18</td>
-              <td class="top-data">1</td>
-              <td class="top-data">2</td>
-              <td class="top-data">3</td>
-              <td class="top-data">5</td>
-              <td class="top-data">1</td>
-              <td class="top-data">2</td>
-              <td class="top-data">2</td>
-              <td class="top-data">10</td>
-              <td class="top-data">1</td>
-              <td class="top-data">109</td>
-            </tr>
-
-            <tr class="bold">
-              <td class="align-c">11+</td>
-              <td class="align-c">11+</td>
-              <td class="" colspan="4">yourlongdomain.com</td>
+              <td class="main-data top-data">75.2</td>
               <td class="top-data" colspan="2">256</td>
               <td class="top-data">18</td>
               <td class="top-data">1</td>
@@ -255,13 +257,54 @@
           </tbody>
         </table>
       </div>
+
+      <div class="add-url">
+        <div class="add-text">
+          Добавить сайт для сравнения
+          <input class="header__input add__input" type="text" placeholder="Введите URL сайта или страницы">
+          <span class="header__btn">Добавить</span>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="action__inner">
+          <div class="action__heading">
+            Рекомендации для попадания в ТОП 10 для domain.ru
+          </div>
+          <ul class="action__ul">
+            <li class="reccom__li">
+              <span class="optimize__icon icon-orange"></span>
+              Увеличить количество слов до <span class="reccom__bold">894</span> <span class="highlight">(+371)</span>
+            </li>
+            <!-- <li class="reccom__li">
+              <span class="optimize__icon icon-orange"></span>
+              <span class="reccom__bold">3</span> вхождения
+            </li>
+            <li class="reccom__li">
+              <span class="optimize__icon icon-red"></span>
+              <span class="reccom__bold">0</span> точных вхождений
+            </li>
+             <li class="reccom__li">
+              <span class="optimize__icon icon-orange"></span>
+              <span class="reccom__bold">500</span> слов
+            </li>
+            <li class="reccom__li">
+              <span class="optimize__icon icon-orange"></span>
+              <span class="reccom__bold">3</span> вхождения
+            </li>
+            <li class="reccom__li">
+              <span class="optimize__icon icon-red"></span>
+              <span class="reccom__bold">0</span> точных вхождений
+            </li> -->
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Text editor-->
 
     <div class="optimize-block">
       <div class="heading">
-        Текстовые показатели
+        Текстовые показатели для <span class="heading__url bold">okna.ru</span>
       </div>
       <div class="optimize__item">
         <span class="optimize__icon icon-green"></span>
@@ -311,18 +354,62 @@
        <div class="optimize__item no-hover">
         <span class="optimize__icon icon-orange"></span>
         <span class="item__name">Body</span>
-        <span class="item__content">
-          Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
-          Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
-          Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
-          Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
-        </span>
+
+        <div class="item__content">
+          <div class="reccomendations">
+            <ul class="reccom__ul">
+              <li class="reccom__li">
+                <span class="optimize__icon icon-orange"></span>
+                <span class="reccom__bold">500</span> слов
+              </li>
+              <li class="reccom__li">
+                <span class="optimize__icon icon-orange"></span>
+                <span class="reccom__bold">3</span> вхождения
+              </li>
+              <li class="reccom__li">
+                <span class="optimize__icon icon-red"></span>
+                <span class="reccom__bold">0</span> точных вхождений
+              </li>
+            </ul>
+          </div>
+          <div class="item__text">
+            Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
+            Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
+            Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
+            Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
+          </div>
+        </div>
+        <div class="item__content">
+          <div class="reccomendations">
+            <ul class="reccom__ul">
+              <li class="reccom__li">
+                <span class="optimize__icon icon-orange"></span>
+                <span class="reccom__bold">500</span> слов
+              </li>
+              <li class="reccom__li">
+                <span class="optimize__icon icon-orange"></span>
+                <span class="reccom__bold">3</span> вхождения
+              </li>
+              <li class="reccom__li">
+                <span class="optimize__icon icon-red"></span>
+                <span class="reccom__bold">0</span> точных вхождений
+              </li>
+            </ul>
+          </div>
+
+          <textarea name="" id="" cols="30" rows="10" class="content-edit">Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа. Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа. Почта Mail.Ru — крупнейшая бесплатная почта, быстрый и удобный интерфейс, неограниченный объем ящика, надежная защита от спама и вирусов, мобильная версия и приложения для смартфонов. Доступ по IMAP, SMS-уведомления, интерфейс на разных языках и темы оформления Почты. Также на Mail.Ru: новости, поиск в интернете, авто, спорт, игры, знакомства, погода, работа.
+          </textarea>
+
+
+
+        </div>
         <i class="fa fa-chevron-up icon-more"></i>
         <div class="cf"></div>
 
+
         <!-- Accordion is opened -->
 
-        <div class="accordion-open">
+        <!-- <div class="accordion-open">
           <div class="reccomendations">
             <ul class="reccom__ul">
               <li class="reccom__li">
@@ -344,7 +431,7 @@
           </textarea>
 
           <div class="cf"></div>
-        </div>
+        </div> -->
 
       </div>
     </div>
