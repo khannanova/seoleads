@@ -103,17 +103,20 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
+  color: #383838;
 }
 
 #top-tabs a:hover {
   color: #1565C0;
 }
 
-
-.tab-selected {
-  color: #1565C0;
-  border-top: 3px solid;
+.ui-tabs-active {
+  border-top: 3px solid #1565C0;
   background-color: #fff;
+}
+
+.ui-tabs-active a {
+  color: #1565C0;
 }
 
 .table {
@@ -346,14 +349,7 @@ body {
   background-color: #1E86D8;
 }
 
-.ui-tabs-active {
-  border-top: 3px solid #1565C0;
-  background-color: #fff;
-}
 
-.ui-tabs-active a {
-  color: #1565C0;
-}
 
 /*Utility*/
 
