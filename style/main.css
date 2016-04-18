@@ -81,37 +81,40 @@ body {
   width: 30%;
 }
 
-#top-tabs nav {
+#top-tabs ul {
   width: 100%;
+  margin: 0;
+  list-style: none;
 }
 
-#top-tabs div {
+#top-tabs li {
+  color: #383838;
+  text-transform: uppercase;
+  font-size: 15px;
   display: inline-block;
   width: 32%;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   cursor: pointer;
+  outline: 0;
 }
 
-#top-tabs div:hover {
+#top-tabs a {
+  text-decoration: none;
+  outline: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+#top-tabs a:hover {
   color: #1565C0;
 }
 
-#top-tabs span {
-  text-transform: uppercase;
-  font-size: 15px;
-}
 
 .tab-selected {
   color: #1565C0;
   border-top: 3px solid;
   background-color: #fff;
-}
-
-.table-wrap {
-  /*border: 1px solid rgba(158, 158, 156, 0.25);*/
-  /*box-shadow: 0px 1px 3px #ccc;*/
 }
 
 .table {
@@ -169,9 +172,10 @@ body {
 }
 
 .optimize-block {
-  /*display: none;*/
   padding-bottom: 50px;
   margin-top: 50px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
 }
 
 .optimize__item {
@@ -237,12 +241,6 @@ body {
   background-color: rgba(65, 129, 163, 0.44);
 }
 
-/*.accordion-open {
-  border-top: 2px solid rgba(33,146,81,0.11);
-  padding-top: 20px;
-  margin-top: 20px;
-}*/
-
 .reccomendations {
   display: inline-block;
   background: rgba(80,243,17,0.11);
@@ -262,13 +260,14 @@ body {
 }
 
 .content-edit {
-  width: 100%;
+  width: 92%;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
   min-height: 472px;
   float: left;
+  padding: 20px;
 }
 
 .content-edit:focus {
@@ -301,11 +300,12 @@ body {
 }
 
 .main-data {
-  font-weight: 700;
+  color: #0277BD;
+  width: 72px;
 }
 
 .actions {
-  background-color: rgba(179, 230, 159, 0.11);
+  background-color: rgba(159, 213, 230, 0.3);
   padding: 20px 30px;
 }
 
@@ -316,9 +316,9 @@ body {
 }
 
 .heading {
-  text-align: center;
   font-size: 26px;
   margin-bottom: 30px;
+  color: #607D8B;
 }
 
 .heading__url {
@@ -333,7 +333,25 @@ body {
   font-size: 18px;
 }
 
+.btn-download {
+  float: right;
+  background-color: #2196F3;
+  padding: 9px 12px 7px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
+.btn-download:hover {
+  background-color: #1E86D8;
+}
+
+.ui-tabs-active {
+  color: #1565C0;
+  border-top: 3px solid #1565C0;
+  background-color: #fff;
+}
 
 /*Utility*/
 
