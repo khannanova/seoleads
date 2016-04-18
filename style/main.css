@@ -3,6 +3,7 @@ body {
   margin: 0;
   color: #383838;
   background-color: #FAFBFC;
+  padding-bottom: 50px;
 }
 
 .header {
@@ -178,6 +179,7 @@ body {
   margin-top: 50px;
   border-top: 1px solid #ccc;
   padding-top: 20px;
+  transition: all .2s ease-out;
 }
 
 .optimize__item {
@@ -349,7 +351,25 @@ body {
   background-color: #1E86D8;
 }
 
+.open-btn {
+  float: right;
+  padding: 9px 12px 7px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #2E7D32;
+  color: #2E7D32;
+}
 
+.open-btn:hover {
+  background-color: #2E7D32;
+  color: #fff;
+}
+
+.not-visible {
+  display: none;
+}
 
 /*Utility*/
 

@@ -26,6 +26,7 @@
   <div class="grid">
 
     <!-- Table top 10 -->
+
   <div id="tabs">
     <div id="top-tabs">
       <ul class="tabs-ul">
@@ -35,27 +36,9 @@
         <li>
           <a href="#top5">Топ 5</a>
         </li>
-
         <li>
           <a href="#top3">Топ 3</a>
         </li>
-
-
-        <!-- <div class="tab-selected">
-          <a href="#top10">
-            <span>Топ 10</span>
-          </a>
-        </div>
-        <div class="">
-          <a href="#top5">
-            <span>Топ 5</span>
-          </a>
-        </div>
-        <div class="">
-          <a href="#top3">
-            <span>Топ 3</span>
-          </a>
-        </div> -->
       </nav>
     </div>
     <div class="table-wrap">
@@ -66,7 +49,7 @@
               <th class="rank">G</th>
               <th class="rank">Я</th>
               <th class="align-l" colspan="4">URL</th>
-              <th class="main-data bold align-r" >SEOLEADS Rank</th>
+              <th class="main-data bold align-r">SEOLEADS Rank</th>
               <th colspan="2" class="align-r">Символы без пробела</th>
               <th class="align-r">Слова</th>
               <th class="align-r">T</th>
@@ -77,7 +60,7 @@
               <th class="align-r">K'</th>
               <th class="align-r">h1</th>
               <th class="align-r">h2</th>
-              <th class="align-r">h3</th>
+              <th class="align-r">h2</th>
               <th class="align-r">body</th>
             </tr>
           </thead>
@@ -498,7 +481,7 @@
               <span class="optimize__icon icon-orange"></span>
               Увеличить количество слов до <span class="reccom__bold">894</span> <span class="highlight">(+371)</span>
             </li>
-            <!-- <li class="reccom__li">
+            <li class="reccom__li">
               <span class="optimize__icon icon-orange"></span>
               <span class="reccom__bold">3</span> вхождения
             </li>
@@ -517,8 +500,11 @@
             <li class="reccom__li">
               <span class="optimize__icon icon-red"></span>
               <span class="reccom__bold">0</span> точных вхождений
-            </li> -->
+            </li>
           </ul>
+
+          <span class="open-btn">Открыть текстовые показатели</span>
+          <div class="cf"></div>
         </div>
       </div>
     </div>
@@ -526,7 +512,7 @@
 
     <!-- Text editor-->
 
-    <div class="optimize-block">
+    <div class="optimize-block not-visible">
       <div class="heading">
         Текстовые показатели для <span class="heading__url bold">domen.ru</span>
         <span class="header__btn btn-download">Скачать xls</span>
@@ -560,7 +546,7 @@
       </div>
        <div class="optimize__item">
         <span class="optimize__icon icon-orange"></span>
-        <span class="item__name">Keywords</span>
+        <span class="item__name">h1</span>
         <span class="item__content">
           Почта, новости, фото
         </span>
@@ -569,7 +555,16 @@
       </div>
        <div class="optimize__item">
         <span class="optimize__icon icon-orange"></span>
-        <span class="item__name">Keywords</span>
+        <span class="item__name">h2..h6</span>
+        <span class="item__content">
+          Почта, новости, фото
+        </span>
+        <i class="fa fa-chevron-down icon-more"></i>
+        <div class="cf"></div>
+      </div>
+      <div class="optimize__item">
+        <span class="optimize__icon icon-orange"></span>
+        <span class="item__name">Текст/HTML</span>
         <span class="item__content">
           Почта, новости, фото
         </span>
@@ -642,7 +637,17 @@
 
 <script>
  $(function() {
-   $( "#tabs" ).tabs();
+   $( '#tabs' ).tabs();
+
+   $('.open-btn').click(function() {
+    $('.optimize-block').removeClass('not-visible');
+
+    var block = '.optimize-block';
+
+    $('html, body').animate({
+       scrollTop: $(block).offset().top
+     }, 500);
+   });
  });
 </script>
 </body>
