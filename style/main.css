@@ -206,14 +206,16 @@ body {
 }
 
 .item__name {
-  width: 10%;
+  width: 8%;
   display: inline-block;
   float: left;
+  font-weight: 700;
 }
 
 .item__content {
   float: left;
-  width: 40%;
+  width: 42%;
+  margin-right: 40px;
 }
 
 .optimize__item div:nth-of-type(1) {
@@ -250,8 +252,15 @@ body {
   display: inline-block;
   background: rgba(80,243,17,0.11);
   border-radius: 3px;
+}
+
+.reccomendations--open {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.reccomendations--closed {
+  width: 42%;
 }
 
 .reccom__ul {
@@ -370,6 +379,10 @@ body {
 
 .not-visible {
   display: none;
+}
+
+.item__text--default {
+  padding-top: 21px;
 }
 
 /*Utility*/
