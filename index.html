@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SEO аудит сайта и сервис внутренней поисковой оптимизации</title>
+  <title>SEO audit and internal search engine optimization service</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic'
   rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -15,9 +15,9 @@
      <img class="logo-img" src="img/logo.svg" alt="s">
    </div>
    <div class="input-group">
-     <input class="header__input input__big" type="text" placeholder="Ваша ключевая фраза">
-     <input class="header__input input__big" type="text" placeholder="Укажите страну или город">
-     <span class="header__btn">Показать ТОП</span>
+     <input class="header__input input__big" type="text" placeholder="Key phrase">
+     <input class="header__input input__big" type="text" placeholder="Country or city">
+     <span class="header__btn">Show TOP</span>
    </div>
   </div>
 </div>
@@ -47,21 +47,19 @@
                 <th class="rank">G</th>
                 <th class="rank">Я</th>
                 <th class="align-l" colspan="4">URL</th>
-                <th class="main-data bold align-r">SEORANK</th>
-                <th colspan="2" class="align-r">Символов</th>
-                <th class="align-r">Слов</th>
+                <th class="main-data bold align-r">SEOLEADS Rank</th>
+                <th colspan="2" class="align-r">Symbols</th>
+                <th class="align-r">Words</th>
                 <th class="align-r">T</th>
                 <th class="align-r">T'</th>
                 <th class="align-r">D</th>
                 <th class="align-r">D'</th>
                 <th class="align-r">K</th>
                 <th class="align-r">K'</th>
-                <th class="align-r">H1</th>
-                <th class="align-r">H1'</th>
-                <th class="align-r">H2</th>
-                <th class="align-r">H2'</th>
-                <th class="align-r">Body</th>
-                <th class="align-r">Body'</th>
+                <th class="align-r">h1</th>
+                <th class="align-r">h2</th>
+                <th class="align-r">h3</th>
+                <th class="align-r">body</th>
               </tr>
             </thead>
             <tbody>
@@ -266,7 +264,7 @@
                 <th class="rank">G</th>
                 <th class="rank">Я</th>
                 <th class="align-l" colspan="4">URL</th>
-                <th class="main-data bold align-r" >SEOLEADS Rank</th>
+                <th class="main-data bold align-r">SEOLEADS Rank</th>
                 <th colspan="2" class="align-r">Символы без пробела</th>
                 <th class="align-r">Слова</th>
                 <th class="align-r">T</th>
@@ -676,6 +674,7 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
@@ -690,7 +689,9 @@
        scrollTop: $('.optimize-block').offset().top - $('.header').innerHeight()
      }, 500);
    });
- });
+  });
+
+
 </script>
 </body>
 </html>
